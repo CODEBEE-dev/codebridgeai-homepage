@@ -1,302 +1,141 @@
-# 🚀 AstroWind
+# CodeBridgeAI
 
-<img src="https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+코드와 사람을 잇는 다리 역할을 하는 기업으로, 코딩 교육, LMS, 디지털사이니지, AI 솔루션 개발을 통해 지식과 기술을 연결합니다.
 
-🌟 _Most *starred* & *forked* Astro theme in 2022, 2023 & 2024_. 🌟
+## 🚀 프로젝트 소개
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+CodeBridgeAI는 다음과 같은 서비스를 제공합니다:
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- **코딩 교육 플랫폼**: 블록 코딩부터 텍스트 코딩까지, 누구나 쉽게 프로그래밍을 배울 수 있습니다.
+- **학습관리시스템(LMS)**: 강의를 보면서 실시간으로 코딩도 함께 할 수 있고, AI로 바로 피드백까지 받을 수 있는 New generation LMS를 서비스합니다.
+- **디지털사이니지 솔루션**: 클라우드 기반 중앙 집중식 콘텐츠 관리로 효율적인 디지털 마케팅을 구현합니다.
+- **AI 솔루션 개발**: 기업과 조직의 디지털 전환(DX)을 위한 맞춤형 AI 솔루션을 개발합니다.
 
-<br>
+## 🛠️ 기술 스택
 
-![AstroWind Theme Screenshot](https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/screenshot-astrowind-1.0.png)
+- **프레임워크**: [Astro](https://astro.build/)
+- **스타일링**: [Tailwind CSS](https://tailwindcss.com/)
+- **컴포넌트**: [Astrowind](https://astrowind.vercel.app/)
+- **배포**: Docker + Nginx
 
-[![arthelokyo](https://custom-icon-badges.demolab.com/badge/made%20by%20-arthelokyo-556bf2?style=flat-square&logo=arthelokyo&logoColor=white&labelColor=101827)](https://github.com/arthelokyo)
-[![License](https://img.shields.io/github/license/arthelokyo/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/arthelokyo)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/arthelokyo/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/arthelokyo/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/arthelokyo/astrowind)
-[![Stars](https://img.shields.io/github/stars/arthelokyo/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/arthelokyo/astrowind)
-[![Forks](https://img.shields.io/github/forks/arthelokyo/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/arthelokyo/astrowind)
+## 📦 설치 및 실행
 
-<br>
+### 방법 1: Docker 사용 (권장)
 
-<details open>
-<summary>Table of Contents</summary>
-
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [TL;DR](#tldr)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-</details>
-
-<br>
-
-## Demo
-
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
-
-<br>
-
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
-
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/arthelokyo/astrowind/discussions/392)
-
-<br>
-
-## TL;DR
-
-```shell
-npm create astro@latest -- --template arthelokyo/astrowind
-```
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
-
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
-
-### Project structure
-
-Inside **AstroWind** template, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── _headers
-│   └── robots.txt
-├── src/
-│   ├── assets/
-│   │   ├── favicons/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── tailwind.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── ui/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── Layout.astro
-│   │   ├── MarkdownLayout.astro
-│   │   └── PageLayout.astro
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.yaml
-│   └── navigation.js
-├── package.json
-├── astro.config.ts
-└── ...
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/arthelokyo/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/arthelokyo/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/arthelokyo/astrowind)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
-
-<br>
-
-### Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `npm install`       | Installs dependencies                              |
-| `npm run dev`       | Starts local dev server at `localhost:4321`        |
-| `npm run build`     | Build your production site to `./dist/`            |
-| `npm run preview`   | Preview your build locally, before deploying       |
-| `npm run check`     | Check your project for errors                      |
-| `npm run fix`       | Run Eslint and format codes with Prettier          |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro preview` |
-
-<br>
-
-### Configuration
-
-Basic configuration file: `./src/config.yaml`
-
-```yaml
-site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
-
-  googleSiteVerificationId: false # Or some value,
-
-# Default SEO metadata
-metadata:
-  title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: true # If the blog will be enabled
-    postsPerPage: 6 # Number of posts per page
-
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
-    relatedPostsCount: 4 # Number of related posts to display
-
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-```
-
-<br>
-
-#### Customize Design
-
-To customize Font families, Colors or more Elements refer to the following files:
-
-- `src/components/CustomStyles.astro`
-- `src/assets/styles/tailwind.css`
-
-### Deploy
-
-#### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
+#### Docker Compose 사용
+```bash
+# 빌드 및 실행
 npm run build
+docker-compose up --build
+
+# 백그라운드 실행
+docker-compose up -d --build
+
+# 중지
+docker-compose down
 ```
 
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
+#### 자동화 스크립트 사용
+```bash
+# 스크립트 실행 권한 부여
+chmod +x build-and-deploy.sh
 
-#### Deploy to Netlify
+# 빌드 및 배포 실행
+./build-and-deploy.sh
+```
 
-Clone this repository on your own GitHub account and deploy it to Netlify:
+#### Docker 직접 사용
+```bash
+# 이미지 빌드
+docker build -t codebridgeai .
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/arthelokyo/astrowind)
+# 컨테이너 실행
+docker run -p 5000:5000 codebridgeai
+```
 
-#### Deploy to Vercel
+### 방법 2: 로컬 개발 환경
 
-Clone this repository on your own GitHub account and deploy to Vercel:
+#### 필수 요구사항
+- Node.js 18 이상
+- npm 또는 yarn
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farthelokyo%2Fastrowind)
+#### 설치 및 실행
+```bash
+# 의존성 설치
+npm install
 
-<br>
+# 개발 서버 실행
+npm run dev
 
-## Frequently Asked Questions
+# 빌드
+npm run build
 
-- Why?
--
--
+# 빌드된 파일 미리보기
+npm run preview
+```
 
-<br>
+## 🌐 접속 방법
 
-## Related projects
+개발 환경에서 실행한 경우:
+- **로컬**: http://localhost:4321
+- **Docker**: http://localhost:5000
 
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
+## 📁 프로젝트 구조
 
-## Contributing
+```
+codebridgeai/
+├── src/
+│   ├── components/          # 재사용 가능한 컴포넌트
+│   │   ├── widgets/        # 페이지 위젯 컴포넌트
+│   │   └── ui/            # UI 컴포넌트
+│   ├── layouts/           # 페이지 레이아웃
+│   ├── pages/             # 페이지 파일들
+│   └── assets/            # 이미지, 폰트 등 정적 파일
+├── public/                # 정적 파일 (빌드 시 그대로 복사)
+│   └── assets/
+│       ├── images/        # 이미지 파일들
+│       └── fonts/         # 폰트 파일들
+├── Dockerfile             # Docker 빌드 설정
+├── docker-compose.yml     # Docker Compose 설정
+├── build-and-deploy.sh    # 자동화 배포 스크립트
+└── package.json
+```
 
-If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
+## 🔧 주요 기능
 
-## Acknowledgements
+### 1. 반응형 디자인
+- 모바일, 태블릿, 데스크톱 모든 디바이스에서 최적화된 UI
 
-Initially created by **Arthelokyo** and maintained by a community of [contributors](https://github.com/arthelokyo/astrowind/graphs/contributors).
+### 2. 다크 모드 지원
+- 사용자 선호도에 따른 테마 전환 기능
 
-## License
+### 3. SEO 최적화
+- 메타 태그, 구조화된 데이터, 사이트맵 자동 생성
 
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+### 4. 성능 최적화
+- 이미지 최적화, 코드 스플리팅, 지연 로딩
+
+## 🎨 브랜드 철학
+
+### 상징의 의미 - <> 심볼이 담은 새로운 세계
+로고의 <> 심볼은 코드의 시작과 끝, 그리고 새로운 세계로의 진입을 상징합니다. 이 기호가 다리(Bridge)를 이루며 만들어내는 공간은 현재와 미래를 이어가는 연결을 표현하며, 무한한 가능성의 문을 열어줍니다.
+
+### 컬러의 가치 - 신뢰와 창의성의 조화
+깊은 블루의 신뢰성, 하늘빛의 확장성, 옐로우의 창의성을 담은 우리의 컬러 팔레트는 정교한 기술력과 따뜻한 교육적 가치가 공존하는 기업의 정체성을 보여줍니다.
+
+### 미래로의 여정 - 학습과 기술 기반의 혁신
+CodeBridgeAI는 끊임없는 학습과 첨단 기술을 바탕으로 개인과 조직, 그리고 사회 전체를 미래로 이끄는 든든한 다리 역할을 합니다.
+
+## 📞 연락처
+
+- **웹사이트**: [https://codebridge.ai](https://codebridge.ai)
+- **교육 플랫폼**: [https://lms.codebridge.ai.kr](https://lms.codebridge.ai.kr)
+- **비즈니스 문의**: [카카오톡 채널](https://pf.kakao.com/_aEFxnn)
+
+## 📄 라이선스
+
+이 프로젝트는 CodeBridgeAI의 내부 프로젝트입니다.
+
+---
+
+**CodeBridgeAI** - 코드와 사람을 잇는 다리

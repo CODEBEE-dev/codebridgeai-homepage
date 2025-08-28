@@ -1,6 +1,7 @@
 services:
-  astrowind:
+  codebridgeai:
     build: .
-    container_name: astrowind
+    container_name: codebridgeai
     ports:
-      - 8080:8080
+      - 5000:5000
+    restart: unless-stopped

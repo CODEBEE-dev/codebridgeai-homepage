@@ -12,11 +12,18 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        // CodeBridgeAI 브랜드 컬러
+        'codebridge': {
+          'blue-foundation': '#3A51D6',
+          'blue-evolution': '#346DBF',
+          'sky-blue': '#51AEE5',
+          'gold-innovation': '#FFDE59',
+        },
       },
       fontFamily: {
-        sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
-        heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+        sans: ['NoonnuBasicGothic', 'var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+        serif: ['NoonnuBasicGothic', 'var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
+        heading: ['NoonnuBasicGothic', 'var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
 
       animation: {

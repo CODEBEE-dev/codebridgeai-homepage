@@ -1,17 +1,15 @@
-FROM node:lts AS base
-WORKDIR /app
+FROM nginx:stable-alpine
 
-FROM base AS deps
-COPY package*.json ./
-RUN npm install
+# 빌드된 dist 폴더를 nginx의 기본 디렉토리로 복사
+COPY dist/ /usr/share/nginx/html/
 
-FROM base AS build
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
-RUN npm run build
+# nginx 설정 파일이 있다면 복사 (선택사항)
+# COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
-FROM nginx:stable-alpine AS deploy
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+# nginx8080 5000에서 실행되도록 설정
+RUN sed -i 's/listen\s*80;/listen 5000;/' /etc/nginx/conf.d/default.conf
 
-EXPOSE 8080
+EXPOSE 5000
+
+# nginx를 포그라운드에서 실행
+CMD ["nginx", "-g", "daemon off;"]

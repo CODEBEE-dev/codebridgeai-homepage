@@ -1,0 +1,130 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'CodeBridgeAI Business - 기업과 조직을 위한 디지털 전환(DX) 플랫폼',
+  description: '디지털사이니지 CMS, AI 솔루션 개발, 기업 맞춤형 디지털 전환(DX) 서비스를 제공합니다.'
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: '솔루션 문의',
+        href: '/contact',
+        icon: 'tabler:message',
+      },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'CodeBridgeAI Business Solutions' }}
+  >
+    <Fragment slot="title">
+      CodeBridgeAI
+      <span class="text-accent dark:text-white"> Business</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      기업과 조직을 위한 디지털 전환(DX) 플랫폼
+    </Fragment>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="easysignage"
+    tagline="디지털사이니지"
+    title="Easysignage 솔루션"
+    subtitle="클라우드 기반 중앙 집중식 콘텐츠 관리 및 배포 시스템"
+    items={[
+      {
+        title: '중앙 집중식 관리',
+        description: '여러 지점의 디지털사이니지를 하나의 대시보드에서 효율적으로 관리할 수 있습니다.',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: '실시간 콘텐츠 배포',
+        description: '클라우드 기반으로 언제 어디서나 실시간으로 콘텐츠를 업데이트하고 배포합니다.',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: '다양한 미디어 지원',
+        description: '이미지, 비디오, 웹페이지 등 다양한 형태의 콘텐츠를 지원합니다.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: '스케줄링 기능',
+        description: '시간대별, 요일별로 다른 콘텐츠를 자동으로 스케줄링하여 표시합니다.',
+        icon: 'tabler:calendar',
+      },
+      {
+        title: '모니터링 시스템',
+        description: '각 디스플레이의 상태와 재생 현황을 실시간으로 모니터링합니다.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'SaaS 제공',
+        description: '구독형 서비스로 초기 투자 비용 없이 바로 서비스를 이용할 수 있습니다.',
+        icon: 'tabler:package',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    id="ai-solutions"
+    tagline="AI 솔루션"
+    title="맞춤형 AI 솔루션 개발"
+    subtitle="기업과 조직의 디지털 전환(DX)을 위한 AI 솔루션을 개발합니다"
+    image={{ src: '~/assets/images/default.png', alt: 'AI Solutions' }}
+    items={[
+      {
+        title: '노코딩 AI 자동화',
+        description: '노코딩으로 비개발자도 쉽고 간단하게 업무 자동화를 할 수 있는 솔루션을 제공합니다.',
+        icon: 'tabler:automation',
+      },
+      {
+        title: '맞춤형 AI 솔루션 개발',
+        description: '보안에 민감한 기업을 위한 온프레미스 AI 솔루션 개발을 해드립니다. ',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'AI 데이터 분석',
+        description: '대용량 데이터를 AI로 분석하여 비즈니스 인사이트를 도출하고 의사결정을 지원합니다.',
+        icon: 'tabler:chart-line',
+      }
+    ]}
+  />
+
+   <!-- CallToAction Widget ************ -->
+
+  <CallToAction
+    tagline="문의하기"
+    title="디지털 전환의 여정을 시작하세요"
+    subtitle="CodeBridgeAI Business와 함께 미래를 선도하는 디지털 솔루션을 구축하세요"
+    actions={[
+      {
+        variant: 'primary',
+        text: '솔루션 문의',
+        href: '/contact',
+        icon: 'tabler:message',
+      },
+      {
+        variant: 'secondary',
+        text: '데모 신청',
+        href: '#easysignage',
+        icon: 'tabler:play',
+      },
+    ]}
+  />
+</Layout>

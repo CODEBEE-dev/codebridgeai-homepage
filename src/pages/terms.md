@@ -1,120 +1,121 @@
 ---
-title: 'Terms and Conditions'
+title: '이용약관'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_최종 업데이트_: 2024년 12월 19일
 
-Please read these terms and conditions carefully before using Our Service.
+본 서비스를 이용하기 전에 이 이용약관을 주의 깊게 읽어주시기 바랍니다.
 
-## Interpretation and Definitions
+## 해석 및 정의
 
-### Interpretation
+### 해석
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+첫 글자가 대문자인 단어들은 다음 조건에 따라 정의된 의미를 가집니다. 다음 정의는 단수형이나 복수형에 관계없이 동일한 의미를 가집니다.
 
-### Definitions
+### 정의
 
-For the purposes of these Terms and Conditions:
+본 이용약관의 목적상:
 
-- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+- **계열사**는 한 당사자를 통제하거나, 한 당사자에 의해 통제되거나, 한 당사자와 공동 통제 하에 있는 법인을 의미하며, 여기서 "통제"는 이사 또는 기타 경영진 선출을 위한 의결권이 있는 주식, 지분 또는 기타 증권의 50% 이상을 소유하는 것을 의미합니다.
 
-- **Country** refers to: California, United States
+- **국가**는 다음을 의미합니다: 대한민국
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- **회사** (본 계약에서 "회사", "우리", "당사" 또는 "당사의"로 지칭)는 (주)코드브릿지AI, 인천광역시 연수구 송도동 123-45를 의미합니다.
 
-- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- **기기**는 컴퓨터, 휴대폰 또는 디지털 태블릿과 같이 서비스에 접근할 수 있는 모든 기기를 의미합니다.
 
-- **Service** refers to the Website.
+- **서비스**는 웹사이트를 의미합니다.
 
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **이용약관** (또한 "약관"으로 지칭)은 서비스 이용에 관한 귀하와 회사 간의 전체 계약을 구성하는 이 이용약관을 의미합니다.
 
-- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- **제3자 소셜 미디어 서비스**는 서비스에서 표시, 포함 또는 제공될 수 있는 제3자가 제공하는 모든 서비스 또는 콘텐츠(데이터, 정보, 제품 또는 서비스 포함)를 의미합니다.
 
-- **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
+- **웹사이트**는 [https://codebridge.ai.kr](https://codebridge.ai.kr)에서 접근 가능한 CodeBridgeAI를 의미합니다.
 
-- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+- **귀하**는 서비스에 접근하거나 사용하는 개인, 또는 해당 개인이 대신하여 서비스에 접근하거나 사용하는 회사 또는 기타 법인을 의미합니다.
 
-## Acknowledgment
+## 승인
 
-These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+본 이용약관은 이 서비스의 사용을 규제하는 이용약관이며, 귀하와 회사 간에 운영되는 계약입니다. 본 이용약관은 서비스 사용에 관한 모든 사용자의 권리와 의무를 규정합니다.
 
-Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+귀하의 서비스 접근 및 사용은 본 이용약관의 수락 및 준수에 조건부입니다. 본 이용약관은 서비스에 접근하거나 사용하는 모든 방문자, 사용자 및 기타 모든 사람에게 적용됩니다.
 
-By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+서비스에 접근하거나 사용함으로써 귀하는 본 이용약관에 구속되는 것에 동의합니다. 본 이용약관의 어느 부분에라도 동의하지 않는 경우 서비스에 접근할 수 없습니다.
 
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
+귀하는 18세 이상임을 진술합니다. 회사는 18세 미만의 사람들이 서비스를 사용하는 것을 허용하지 않습니다.
 
-Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+귀하의 서비스 접근 및 사용은 또한 회사의 개인정보처리방침에 대한 귀하의 수락 및 준수에 조건부입니다. 당사의 개인정보처리방침은 애플리케이션이나 웹사이트를 사용할 때 귀하의 개인정보 수집, 사용 및 공개에 관한 당사의 정책과 절차를 설명하며, 귀하의 개인정보 보호 권리와 법이 귀하를 보호하는 방법에 대해 알려줍니다. 서비스를 사용하기 전에 당사의 개인정보처리방침을 주의 깊게 읽어주시기 바랍니다.
 
-## Links to Other Websites
+## 다른 웹사이트로의 링크
 
-Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+당사의 서비스는 회사가 소유하거나 통제하지 않는 제3자 웹사이트 또는 서비스로의 링크를 포함할 수 있습니다.
 
-The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+회사는 제3자 웹사이트 또는 서비스의 콘텐츠, 개인정보처리방침 또는 관행에 대해 통제권이 없으며, 이에 대한 책임을 지지 않습니다. 귀하는 또한 회사가 그러한 웹사이트 또는 서비스를 통해 또는 그와 관련하여 사용하거나 의존함으로써 발생하거나 발생한다고 주장되는 모든 손해나 손실에 대해 직접적이든 간접적이든 책임지거나 책임을 지지 않는다는 것에 동의합니다.
 
-We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+귀하가 방문하는 제3자 웹사이트 또는 서비스의 이용약관과 개인정보처리방침을 읽어보시기를 강력히 권장합니다.
 
-## Termination
+## 해지
 
-We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+회사는 사전 통지나 책임 없이 즉시 귀하의 접근을 해지하거나 중단할 수 있으며, 이는 본 이용약관 위반을 포함하되 이에 국한되지 않는 어떠한 이유든 포함합니다.
 
-Upon termination, Your right to use the Service will cease immediately.
+해지 시, 서비스 사용에 대한 귀하의 권리는 즉시 중단됩니다.
 
-## Limitation of Liability
+## 책임의 제한
 
-Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
+귀하가 발생할 수 있는 손해에도 불구하고, 본 약관의 모든 조항에 따른 회사와 그 공급업체의 전체 책임 및 전술한 모든 것에 대한 귀하의 배타적 구제책은 서비스를 통해 귀하가 실제로 지불한 금액 또는 서비스를 통해 아무것도 구매하지 않은 경우 100,000원으로 제한됩니다.
 
-To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+적용 가능한 법률이 허용하는 최대 범위 내에서, 회사나 그 공급업체는 어떠한 경우에도 특별, 부수적, 간접적 또는 결과적 손해에 대해 책임을 지지 않습니다(이에 국한되지 않지만, 이익 손실, 데이터 또는 기타 정보 손실, 사업 중단, 개인 상해, 개인정보 손실, 서비스 사용 또는 사용 불가능과 관련된 모든 손해, 서비스와 함께 사용되는 제3자 소프트웨어 및/또는 제3자 하드웨어, 또는 본 약관의 모든 조항과 관련된 기타 모든 손해를 포함하되 이에 국한되지 않음). 이는 회사나 공급업체가 그러한 손해의 가능성에 대해 통지받았거나 구제책이 본질적 목적을 달성하지 못한 경우에도 마찬가지입니다.
 
-Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
+일부 주에서는 묵시적 보증의 배제나 부수적 또는 결과적 손해에 대한 책임 제한을 허용하지 않으며, 이는 위의 제한 중 일부가 적용되지 않을 수 있음을 의미합니다. 이러한 주에서는 각 당사자의 책임이 법률이 허용하는 최대 범위로 제한됩니다.
 
-## "AS IS" and "AS AVAILABLE" Disclaimer
+## "있는 그대로" 및 "이용 가능한 대로" 면책 조항
 
-The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
+서비스는 모든 결함과 오류와 함께 "있는 그대로" 및 "이용 가능한 대로" 귀하에게 제공되며, 어떠한 종류의 보증도 없습니다. 적용 가능한 법률이 허용하는 최대 범위 내에서, 회사는 자체적으로 그리고 그 계열사 및 해당 라이선스 제공업체 및 서비스 제공업체를 대신하여 서비스와 관련하여 모든 보증을 명시적으로 부인합니다. 여기에는 상품성, 특정 목적에의 적합성, 소유권 및 비침해에 대한 모든 묵시적 보증, 그리고 거래 과정, 성능 과정, 사용 또는 거래 관행에서 발생할 수 있는 보증이 포함됩니다. 전술한 내용에 제한되지 않고, 회사는 어떠한 보증이나 약속도 제공하지 않으며, 서비스가 귀하의 요구사항을 충족하거나, 의도된 결과를 달성하거나, 다른 소프트웨어, 애플리케이션, 시스템 또는 서비스와 호환되거나 작동하거나, 중단 없이 운영되거나, 성능 또는 신뢰성 표준을 충족하거나, 오류가 없거나, 모든 오류나 결함이 수정될 수 있거나 수정될 것이라는 어떠한 종류의 표현도 하지 않습니다.
 
-Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
+전술한 내용에 제한되지 않고, 회사나 회사의 공급업체는 어떠한 종류의 표현이나 보증도 하지 않습니다: (i) 서비스의 운영 또는 가용성, 또는 그에 포함된 정보, 콘텐츠, 자료 또는 제품에 관하여; (ii) 서비스가 중단되지 않거나 오류가 없을 것이라는 점에 관하여; (iii) 서비스를 통해 제공되는 정보나 콘텐츠의 정확성, 신뢰성 또는 최신성에 관하여; 또는 (iv) 서비스, 그 서버, 콘텐츠 또는 회사를 대신하여 또는 회사로부터 보내진 이메일이 바이러스, 스크립트, 트로이 목마, 웜, 악성코드, 시한폭탄 또는 기타 유해한 구성 요소가 없을 것이라는 점에 관하여.
 
-Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+일부 관할권에서는 특정 유형의 보증 배제나 소비자의 적용 가능한 법정 권리에 대한 제한을 허용하지 않으므로, 위의 배제 및 제한 중 일부 또는 전부가 귀하에게 적용되지 않을 수 있습니다. 그러나 그러한 경우 본 섹션에 명시된 배제 및 제한은 적용 가능한 법률에 따라 시행 가능한 최대 범위로 적용됩니다.
 
-## Governing Law
+## 준거법
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+국가의 법률(법률 충돌 규칙 제외)이 본 약관과 서비스 사용을 규율합니다. 애플리케이션 사용은 또한 다른 지역, 주, 국가 또는 국제 법률의 적용을 받을 수 있습니다.
 
-## Disputes Resolution
+## 분쟁 해결
 
-If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+서비스에 관해 우려사항이나 분쟁이 있는 경우, 귀하는 먼저 회사에 연락하여 분쟁을 비공식적으로 해결하려고 시도하는 것에 동의합니다.
 
-## For European Union (EU) Users
+## 유럽연합(EU) 사용자를 위한 조항
 
-If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+귀하가 유럽연합 소비자인 경우, 귀하는 거주하는 국가의 법률의 모든 강제 조항의 혜택을 받게 됩니다.
 
-## United States Legal Compliance
+## 미국 법적 준수
 
-You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+귀하는 다음을 진술하고 보증합니다: (i) 귀하는 미국 정부의 금수 조치 대상 국가이거나 미국 정부에 의해 "테러 지원" 국가로 지정된 국가에 위치하지 않으며, (ii) 귀하는 미국 정부의 금지 또는 제한 대상자 목록에 등재되지 않았습니다.
 
-## Severability and Waiver
+## 분리성 및 포기
 
-### Severability
+### 분리성
 
-If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+본 약관의 조항이 시행 불가능하거나 무효로 판단되는 경우, 해당 조항은 적용 가능한 법률에 따라 해당 조항의 목적을 달성하기 위해 변경되고 해석되며, 나머지 조항은 완전한 효력을 유지합니다.
 
-### Waiver
+### 포기
 
-Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+본 약관에 달리 규정된 경우를 제외하고, 본 약관에 따른 권리 행사 실패 또는 의무 이행 요구 실패는 당사자가 그러한 권리를 행사하거나 그러한 이행을 요구할 수 있는 능력에 영향을 미치지 않으며, 위반에 대한 포기는 이후 위반에 대한 포기를 구성하지 않습니다.
 
-## Translation Interpretation
+## 번역 해석
 
-These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+본 이용약관은 당사가 서비스에서 귀하에게 제공한 경우 번역되었을 수 있습니다. 귀하는 분쟁의 경우 원본 영어 텍스트가 우선한다는 것에 동의합니다.
 
-## Changes to These Terms and Conditions
+## 본 이용약관의 변경
 
-We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+회사는 단독 재량에 따라 언제든지 본 약관을 수정하거나 대체할 권리를 보유합니다. 수정이 중요한 경우, 회사는 새로운 약관이 효력을 발생하기 전에 최소 30일 전에 합리적인 노력을 기울여 통지할 것입니다. 중요한 변경의 구성 요소는 회사의 단독 재량에 따라 결정됩니다.
 
-By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+해당 수정사항이 효력을 발생한 후에도 서비스에 계속 접근하거나 사용함으로써, 귀하는 수정된 약관에 구속되는 것에 동의합니다. 새로운 약관에 전부 또는 일부에 동의하지 않는 경우, 웹사이트와 서비스 사용을 중단해 주시기 바랍니다.
 
-## Contact Us
+## 문의하기
 
-If you have any questions about these Terms and Conditions, You can contact us:
+본 이용약관에 관한 질문이 있으시면 다음 방법으로 연락해 주시기 바랍니다:
 
-- By email: somecoolemail@domain.com
+- 이메일: codebridge@codebridge.ai.kr
+- 주소: 인천광역시 연수구 송도동 인천타워대로

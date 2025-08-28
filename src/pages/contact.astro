@@ -10,70 +10,71 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
-  <HeroText tagline="Contact" title="Let's Connect!" />
-
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
-
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
-    items={[
+    title="CodeBridgeAI 문의하기"
+    items={[      
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        title: 'kakao',
+        description: '카카오톡으로 문의하기',
+        icon: 'tabler:brand-kako-talk',
+        callToAction: {
+          text: '카카오톡 채널로 이동',
+          href: 'https://pf.kakao.com/_aEFxnn',
+          variant: 'primary',
+          target: '_blank',
+        },
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'codebridge@codebridge.ai.kr </br>이메일로 문의하기',
         icon: 'tabler:mail',
+        callToAction: {
+          text: '이메일 주소 복사',
+          href: '#',
+          variant: 'primary',
+          id: 'copy-email-btn',
+        },
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
+        title: 'Instagram',
+        description: '인스타그램으로 문의하기',
+        icon: 'tabler:brand-instagram',
+        callToAction: {
+          text: '인스타그램으로 이동',
+          href: 'https://www.instagram.com/codebridge.ai_official?igsh=eWJsNDg3cXpmdWh6',
+          variant: 'primary',
+          target: '_blank',
+        },
       },
     ]}
-  />
-</Layout>
+      />
+  </Layout>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const copyBtn = document.getElementById('copy-email-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const email = 'codebridge@codebridge.ai.kr';
+          
+          navigator.clipboard.writeText(email).then(function() {
+            // 버튼 텍스트를 임시로 변경하여 복사 완료 표시
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = '복사 완료!';
+            copyBtn.style.backgroundColor = '#10B981'; // 초록색으로 변경
+            
+            setTimeout(function() {
+              copyBtn.textContent = originalText;
+              copyBtn.style.backgroundColor = ''; // 원래 색상으로 복원
+            }, 2000);
+          }).catch(function(err) {
+            console.error('클립보드 복사 실패:', err);
+            alert('이메일 주소 복사에 실패했습니다.');
+          });
+        });
+      }
+    });
+  </script>
