@@ -35,8 +35,8 @@ const metadata = {
         {
           variant: 'secondary',
           text: '무료 체험',
-          href: 'https://lms.codebridge.ai.kr',
-          target: '_blank'
+          href: '#',
+          'data-trial-modal': true
         },
       ]}
       isSticky
@@ -47,7 +47,7 @@ const metadata = {
 
   <Hero2
     actions={[
-      { variant: 'primary', target: '_blank', text: '무료 체험 시작', href: 'https://lms.codebridge.ai.kr', icon: 'tabler:play' },
+      { variant: 'primary', text: '무료 체험 시작', href: '#', icon: 'tabler:play', 'data-trial-modal': true },
       { text: '문의하기', href: '/contact', icon: 'tabler:message' },
     ]}
     image={{
@@ -89,6 +89,11 @@ const metadata = {
         title: 'CodeBEE IoT',
         description: '마이크로비트, 아두이노 등을 활용한 실습 중심의 IoT 교육을 제공합니다.',
         icon: 'tabler:check',
+        action: {
+          text: 'CodeBEE IoT 체험하기',
+          href: 'https://aiot.codebridge.ai.kr',
+          target: '_blank',
+        },
       },
       {
         title: 'CodeBEE AI Play',
@@ -110,6 +115,28 @@ const metadata = {
       <p class="text-lg text-muted dark:text-slate-400 mb-6">
         시각적 블록 조작으로 프로그래밍의 기초를 쉽게 배우세요
       </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a 
+          href="https://hypy.codebridge.ai.kr" 
+          target="_blank" 
+          class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          CodeBEE 체험하기
+        </a>
+        <a 
+          href="https://aiot.codebridge.ai.kr" 
+          target="_blank" 
+          class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-200"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          CodeBEE IoT 체험하기
+        </a>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
@@ -192,6 +219,18 @@ const metadata = {
       <p class="text-lg text-muted dark:text-slate-400 mb-6">
         AI퀴즈 자동생성, AI 서술형 자동채점 및 피드백, 강의보면서 실시간 코딩, 설치없이 코드 퀴즈까지 가능한 CodeBridgeAI LMS입니다.
       </p>
+      <div class="flex justify-center">
+        <a 
+          href="https://lms.codebridge.ai.kr" 
+          target="_blank" 
+          class="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors duration-200"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          LMS 체험하기
+        </a>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
@@ -210,15 +249,124 @@ const metadata = {
       {
         variant: 'primary',
         text: '무료 체험 시작',
-        href: '#block-coding',
+        href: '#',
         icon: 'tabler:play',
+        'data-trial-modal': true,
       },
       {
         variant: 'secondary',
         text: '상담 문의',
-        href: '/contact',
+        href: 'https://codebridge.ai.kr/contact/',
+        target: '_blank',
         icon: 'tabler:message',
       },
     ]}
   />
+
+  <!-- 무료 체험 선택 모달 -->
+  <div id="trialModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md w-full mx-4">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white">무료 체험 선택</h3>
+        <button id="closeModal" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <p class="text-gray-600 dark:text-gray-300 mb-6">체험하고 싶은 플랫폼을 선택해주세요.</p>
+      <div class="space-y-3">
+        <a 
+          href="https://hypy.codebridge.ai.kr" 
+          target="_blank"
+          class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 text-center"
+        >
+          🎮 CodeBEE 무료 체험
+        </a>
+        <a 
+          href="https://aiot.codebridge.ai.kr" 
+          target="_blank"
+          class="block w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 text-center"
+        >
+          🔧 CodeBEE IoT 무료 체험
+        </a>
+        <a 
+          href="https://lms.codebridge.ai.kr" 
+          target="_blank"
+          class="block w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 text-center"
+        >
+          📚 LMS 무료 체험
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<script>
+  // 모달 관련 JavaScript
+  function initTrialModal() {
+    const modal = document.getElementById('trialModal');
+    const closeModal = document.getElementById('closeModal');
+    const trialButtons = document.querySelectorAll('[data-trial-modal]');
+
+    // 모달 요소가 존재하지 않으면 종료
+    if (!modal || !closeModal) {
+      return;
+    }
+
+    // 기존 이벤트 리스너 제거 (중복 방지)
+    trialButtons.forEach(button => {
+      button.removeEventListener('click', handleTrialButtonClick);
+      button.addEventListener('click', handleTrialButtonClick);
+    });
+
+    closeModal.removeEventListener('click', handleCloseModal);
+    closeModal.addEventListener('click', handleCloseModal);
+
+    modal.removeEventListener('click', handleModalBackgroundClick);
+    modal.addEventListener('click', handleModalBackgroundClick);
+
+    // ESC 키 이벤트 리스너는 전역적으로 하나만 등록
+    if (!window.trialModalEscapeHandler) {
+      window.trialModalEscapeHandler = function(e) {
+        if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+        }
+      };
+      document.addEventListener('keydown', window.trialModalEscapeHandler);
+    }
+  }
+
+  function handleTrialButtonClick(e) {
+    e.preventDefault();
+    const modal = document.getElementById('trialModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // 스크롤 방지
+    }
+  }
+
+  function handleCloseModal() {
+    const modal = document.getElementById('trialModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = ''; // 스크롤 복원
+    }
+  }
+
+  function handleModalBackgroundClick(e) {
+    if (e.target === e.currentTarget) {
+      handleCloseModal();
+    }
+  }
+
+  // DOM 로드 시 초기화
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTrialModal);
+  } else {
+    initTrialModal();
+  }
+
+  // Astro 클라이언트 사이드 라우팅 대응
+  document.addEventListener('astro:after-swap', initTrialModal);
+</script>

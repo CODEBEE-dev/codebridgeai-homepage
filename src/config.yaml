@@ -1,5 +1,5 @@
 site:
-  name: CodeBridgeAI
+  name: CodeBridgeAI(코드브릿지AI)
   site: 'https://codebridge.ai.kr'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,15 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: CodeBridgeAI - Bridge to the Future World
+    default: CodeBridgeAI- Bridge to the Future World
     template: '%s — CodeBridgeAI'
-  description: "코드와 사람을 잇는 다리, CodeBridgeAI. 코딩 교육, LMS, 디지털사이니지, AI 솔루션을 통해 지식과 기술을 연결합니다."
+  description: "코드와 사람을 잇는 다리, CodeBridgeAI. 주식회사 코드브릿지에이아이.코딩 교육, AI교육, LMS, 디지털사이니지, AI 솔루션을 통해 지식과 기술을 연결합니다."
+  keywords: "코드브릿지ai, 코드브릿지에이아이, CodeBridgeAI, 블록코딩, 코딩교육, AI교육, IOT, LMS, 마이크로비트, microbit, 아두이노, arduino,디지털사이니지, AI솔루션, 업무자동화,프로그래밍교육, 인공지능교육, 온라인코딩교육, 개발교육, 소프트웨어교육"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: CodeBridgeAI
+    site_name: CodeBridgeAI 홈페이지
     images:
       - url: '~/assets/images/default.png'
         width: 1200
