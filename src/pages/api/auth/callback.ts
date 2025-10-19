@@ -5,24 +5,24 @@ export const prerender = false;
 const KEYCLOAK_TOKEN_URL =
   'https://auth.codebridge.ai.kr/realms/main/protocol/openid-connect/token';
 
-const getEnv = () => {
-  const clientId = import.meta.env.KEYCLOAK_CLIENT_ID;
-  const redirectRoot = import.meta.env.KEYCLOAK_REDIRECT_URI_ROOT;
+const stripTrailingSlash = (value: string) =>
+  value.endsWith('/') ? value.slice(0, -1) : value;
 
-  if (!clientId || !redirectRoot) {
-    return { clientId: undefined, redirectRoot: undefined };
+const resolveRedirectRoot = (request: Request) => {
+  const envRoot = import.meta.env.KEYCLOAK_REDIRECT_URI_ROOT;
+  if (envRoot) {
+    return stripTrailingSlash(envRoot);
   }
 
-  return { clientId, redirectRoot };
+  const url = new URL(request.url);
+  return `${url.protocol}//${url.host}`;
 };
 
 const secureCookie = import.meta.env.NODE_ENV === 'production';
 
 export const GET: APIRoute = async ({ request, redirect, cookies }) => {
-  const { clientId, redirectRoot } = getEnv();
-  const fallbackRedirect = redirectRoot ?? '/';
-
-  if (!clientId || !redirectRoot) {
+  const clientId = import.meta.env.KEYCLOAK_CLIENT_ID;
+  if (!clientId) {
     return new Response(
       JSON.stringify({ error: 'Missing Keycloak environment configuration.' }),
       {
@@ -31,6 +31,9 @@ export const GET: APIRoute = async ({ request, redirect, cookies }) => {
       }
     );
   }
+
+  const redirectRoot = resolveRedirectRoot(request);
+  const fallbackRedirect = redirectRoot;
 
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
@@ -95,4 +98,3 @@ export const GET: APIRoute = async ({ request, redirect, cookies }) => {
 
   return redirect(fallbackRedirect);
 };
-

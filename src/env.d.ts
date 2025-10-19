@@ -6,7 +6,7 @@
 
 interface ImportMetaEnv {
   readonly KEYCLOAK_CLIENT_ID: string;
-  readonly KEYCLOAK_REDIRECT_URI_ROOT: string;
+  readonly KEYCLOAK_REDIRECT_URI_ROOT?: string;
 }
 
 interface ImportMeta {
