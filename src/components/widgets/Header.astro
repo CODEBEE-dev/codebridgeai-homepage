@@ -150,18 +150,92 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             )
           }
         </div>
-        {
-          actions?.length ? (
-            <span class="ml-4 rtl:ml-0 rtl:mr-4">
-              {actions.map((btnProps) => (
-                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto" />
-              ))}
-            </span>
-          ) : (
-            ''
-          )
-        }
+        <div class="flex items-center gap-4 text-sm font-medium text-muted ml-4 rtl:ml-0 rtl:mr-4">
+          <a
+            href="/api/auth/keycloak"
+            class="inline-flex hover:text-primary transition-colors"
+            data-auth-control="signin"
+          >
+            로그인
+          </a>
+          <a
+            href="/api/auth/registration"
+            class="inline-flex hover:text-primary transition-colors"
+            data-auth-control="signup"
+          >
+            회원가입
+          </a>
+          <a
+            href="/api/auth/logout"
+            class="hidden inline-flex hover:text-primary transition-colors"
+            data-auth-control="signout"
+          >
+            로그아웃
+          </a>
+          {
+            actions?.length
+              ? actions.map((btnProps) => (
+                <Button
+                  {...btnProps}
+                  class="py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto"
+                />
+              ))
+              : null
+          }
+        </div>
       </div>
     </div>
   </div>
 </header>
+
+<script>
+  const AUTH_ENDPOINT = '/api/auth/me';
+
+  const toggleAuthButtons = (loggedIn) => {
+    const signIn = document.querySelector('[data-auth-control="signin"]');
+    const signUp = document.querySelector('[data-auth-control="signup"]');
+    const signOut = document.querySelector('[data-auth-control="signout"]');
+
+    if (!signIn || !signUp || !signOut) {
+      return;
+    }
+
+    if (loggedIn) {
+      signIn.classList.add('hidden');
+      signUp.classList.add('hidden');
+      signOut.classList.remove('hidden');
+    } else {
+      signIn.classList.remove('hidden');
+      signUp.classList.remove('hidden');
+      signOut.classList.add('hidden');
+    }
+  };
+
+  const fetchAuthState = async () => {
+    try {
+      const response = await fetch(AUTH_ENDPOINT, {
+        credentials: 'include',
+      });
+      toggleAuthButtons(response.ok);
+    } catch (error) {
+      toggleAuthButtons(false);
+    }
+  };
+
+  const initAuthControls = () => {
+    fetchAuthState();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAuthControls, { once: true });
+  } else {
+    initAuthControls();
+  }
+
+  if (typeof window !== 'undefined') {
+    if (!window.__codebridgeAuthListenersAttached) {
+      document.addEventListener('astro:after-swap', initAuthControls);
+      window.__codebridgeAuthListenersAttached = true;
+    }
+  }
+</script>

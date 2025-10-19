@@ -3,3 +3,12 @@
 /// <reference types="astro/client" />
 /// <reference types="vite/client" />
 /// <reference types="../vendor/integration/types.d.ts" />
+
+interface ImportMetaEnv {
+  readonly KEYCLOAK_CLIENT_ID: string;
+  readonly KEYCLOAK_REDIRECT_URI_ROOT: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
